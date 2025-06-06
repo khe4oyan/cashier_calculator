@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  outline: none;
+  border: 1px solid #0005;
+  border-radius: 10px;
+}
+
+input:disabled {
+  border: none;
+  background-color: rgb(197, 190, 190);
+  color: white;
+
+  &::placeholder {
+    color: rgb(95, 93, 93);
+  }
+}
+
+.cash {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.coinsSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  div {
+    flex: 1;
+  }
+
+  .coin {
+    --size: 50px;
+    width: var(--size);
+    height: var(--size);
+    object-fit: cover;
+  }
+
+  .coin_500 {
+    object-position: 100%;
+  }
+
+  .coin_200 {
+    object-position: 79%;
+  }
+
+  .coin_100 {
+    object-position: 57%;
+  }
+
+  .coin_50 {
+    object-position: 36.6%;
+    width: 45px;
+  }
+
+  .coin_20 {
+    object-position: 18%;
+    width: 43px;
+  }
+
+  .coin_10 {
+    object-position: 0%;
+    width: 44px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 5px;
+    height: fit-content;
+  }
+
+  .summary {
+    color: rgb(70, 70, 70);
+  }
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  input {
+    width: 100%;
+  }
+}
